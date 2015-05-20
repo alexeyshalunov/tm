@@ -1,0 +1,58 @@
+.tabs {
+    display: inline-block;
+}
+
+div.tabs > ul {
+    margin: 0 24.9%;
+    padding-bottom: 50px;
+}
+
+.tabs ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tabs ul li {
+    margin: 0 2px 0 0;
+    display: block;
+    float: left;
+    padding: 10px 14px;
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.tabs ul li.active, .tabs ul li.active:hover, .tabs ul li:hover {
+    background-color: #fff;
+    color: #3a494c;
+}
+
+@media (max-width: 767px) {
+    div .tabs > ul li {
+        float: none;
+    }
+}
+
+@media (max-width: 979px) {
+    div.tabs > ul {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 1199px) {
+    div.tabs > ul {
+        margin: 0 10%;
+    }
+}
